@@ -1,0 +1,102 @@
+@use '../utilities/' as *;
+@use '../base/' as *;
+
+.logo__elle {
+    @include for-phone {
+        padding: 0 5px;
+    }
+
+    @include for-tablet {
+        padding: 0;
+    }
+}
+
+.header {
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-family: $family-primary;
+    
+    @include for-phone {
+        padding: 40px 0;
+    }
+
+    @include for-tablet {
+        padding: 70px 0;
+    }
+
+    &__wrapper {  
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 473px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__text__wrapper {
+        margin: 0 auto;
+        width: 361px;
+    }
+}
+
+.pozivnica__sadrzaj {
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1.92px;
+    
+    @include for-phone {
+        font-size: 20px;
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+
+    @include for-tablet {
+        font-size: 24px;
+        margin-top: 70px;
+        padding: 0;
+    }
+}
+
+.square_black {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1.92px;
+    line-height: 1;
+    padding: 4px 7px;
+}
+
+.mjesto {
+    margin-top: 71px;
+
+    
+    &__naziv {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.75;
+        letter-spacing: 1.28px;
+        margin-top: 15px;
+
+        @include for-phone {
+            padding: 0 20px;
+        }
+
+        @include for-tablet {
+            padding: 0;
+        }
+    }
+
+    &__podaci {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.75;
+        letter-spacing: 1.28px;
+    }
+}
+
+.vrijeme {
+    margin: 23px 0 15px;
+}

@@ -1,0 +1,38 @@
+@use '../utilities/' as *;
+@use '../base/' as *;
+
+.rok__odgovora {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 70px 32px;
+  text-align: center;
+
+  @include for-phone {
+    margin: 50px 32px 40px;
+  }
+}
+
+.privatnost {
+  font-size: 12px;
+  text-align: center;
+
+  @include for-phone {
+    margin-bottom: 63px;
+  }
+
+  @include for-tablet {
+    margin-bottom: 80px;
+  }
+
+  @include for-desktop {
+    margin-bottom: 250px;
+  }
+}
+
+.link-privatnost {
+  color: $crimson;
+
+  &:hover {
+    color: $crimson;
+  }
+}

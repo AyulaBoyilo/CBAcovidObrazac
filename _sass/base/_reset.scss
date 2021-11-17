@@ -1,0 +1,22 @@
+@use '../utilities' as *;
+@use 'typography' as *;
+
+// GENERAL
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $lighter-gray;
+  $family-primary: 'Roboto', sans-serif;
+  max-width: 100vw;
+  margin: 0;
+  overflow: hidden;
+}
+
+.content__wrapper {
+  margin: 0 auto;
+  max-width: 600px;
+}

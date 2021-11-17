@@ -1,0 +1,139 @@
+@use '../utilities/' as *;
+@use '../base/' as *;
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+
+    @include for-phone {
+        padding-bottom: 30px;
+    }
+
+    @include for-tablet {
+        padding-bottom: 70px;
+    }
+}
+
+.form {
+    .dolazak {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+
+        label {
+            width: 180px;
+
+            &:first-child {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.covid__obrazac__wrapper {
+    align-items: center;
+    display: flex;
+}
+
+.covid__obrazac__text {
+    color: black;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 1.76px;
+    padding: 0 21.5px;
+    text-align: center;
+}
+
+.left__line, .right__line {
+    background-color: black;
+    height: 2px;
+    flex: 1;
+}
+
+.left__line {
+
+    @include for-phone {
+        margin-left: 0;
+    }
+
+    @include for-tablet {
+        margin-left: 32px;
+    }
+}
+
+.right__line {
+    @include for-phone {
+        margin-right: 0;
+    }
+
+    @include for-tablet {
+        margin-right: 32px;
+    }
+}
+
+.square__light {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    margin: 0 32px;
+    text-align: center;
+
+    @include for-phone {
+        padding: 25px;
+    }
+
+    @include for-tablet {
+        padding: 37px;
+    }
+
+    .text__ili {
+        margin-top: 32px;
+    }
+}
+
+.text__strong {
+    font-weight: 700;
+    margin-top: 32px;
+}
+
+.text__mid {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.opcije {
+    display: flex;
+    justify-content: center;
+
+    @include for-phone {
+        p {
+            margin: 60px 20px;
+            width: calc(100vw - 40px);
+        }
+    }
+
+    @include for-tablet {
+        p {
+            margin: 70px 32px;
+            width: 100%;
+        }
+    }
+}
+
+.potvrda {
+    @include for-phone {
+        margin: 0 10px;
+    }
+
+    @include for-tablet {
+        margin: 0 106px;
+    }
+
+    .button__label:first-child {
+        margin-bottom: 30px;
+    }
+}

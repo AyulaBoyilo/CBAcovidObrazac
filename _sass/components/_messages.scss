@@ -1,0 +1,60 @@
+@use '../utilities/variables' as *;
+@use '../base/typography' as *;
+
+#error-msg, #response-msg {
+    color: $crimson;
+    font-family: $family-primary;
+    font-weight: 600;
+    padding-top: 40px;
+  
+    @media screen and (min-device-width: 1200px) and (max-device-width: 2560px) and (-webkit-min-device-pixel-ratio: 1) {
+      font-size: 20px;
+      line-height: 32px;
+    }
+  
+    /* Tablet Portrait */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  
+    /* Tablet Landscape */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  
+    /*mobile*/
+    @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: 30px;
+      padding-left: 10vw;
+      padding-right: 10vw;
+    }
+}
+
+#response-msg {
+    color: black;
+    margin-top: 40px;
+}
+
+.error_ime, .error_dolazak, .error_potvrda {
+  border: 1.5px solid $crimson;
+}
+
+.error_ime__message, .error_potvrda__message, .error_dolazak__message {
+  color: $crimson;
+  font-weight: 500;
+  margin-top: 7px;
+  text-align: center;
+}
+
+.error__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error__labels {
+  padding: 20px 25px;
+}

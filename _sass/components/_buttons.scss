@@ -1,0 +1,35 @@
+@use '../utilities' as *;
+@use '../base' as *;
+
+.button--custom {
+    cursor: pointer;
+    height: 54px;
+    width: 158px;
+    display: block;
+    font-family: $family-primary;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    line-height: 52px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    padding: 0;
+    margin: 50px auto 0 auto;
+
+    @include for-phone {
+        margin: 30px auto 0 auto;
+    }
+  
+    &:hover {
+      background: $light-gray;
+    }
+}
+
+.button {
+    &:active, &:focus, &:focus:not(:active) {
+        color: white;
+        border-color: none;
+        box-shadow: none;
+    }
+}

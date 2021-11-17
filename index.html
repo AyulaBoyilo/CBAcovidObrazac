@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-16" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ESA Covid obrazac</title>
+    <meta name="title" content="Arena Centar blagdanski shopping" />
+    <meta name="description" content="Ispuni anketu i osvoji poklon karticu Arena Centra od 1000 kuna" />
+    <link rel="stylesheet" href="css/main.css?v=4" />
+
+    <!-- Facebook -->
+    <meta property="og:url" content="https://native.story.hr/preview/arena-centar/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Arena Centar blagdanski shopping" />
+    <meta
+      property="og:description"
+      content="Ispuni anketu i osvoji poklon karticu Arena Centra od 1000 kuna"
+    />
+    <meta
+      property="og:image"
+      content="https://native.story.hr/preview/arena-centar/share.jpg"
+    />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="fb:app_id" content="684146431996498" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png" sizes="32x32">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-267402-38"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+	
+			gtag('config', 'UA-267402-38');
+		</script>
+    
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="lib/jquery.serialize-object.min.js"></script>
+  </head>
+
+  <body>
+    <div class="content__wrapper">
+      <!-- header with title & subtitle -->
+      <header class="header">
+        <div class="header__wrapper">
+          <img class="logo__elle" src="./assets/images/ESA-10-godina-logo.png" alt="logo ESA">
+          <div class="header__text__wrapper">
+            <h1 class="pozivnica__sadrzaj">Magazin Elle poziva Vas na svečanu dodjelu nagrada za najbolja ostvarenja na području mode, stila, dizajna i umjetnosti  ELLE STYLE AWARDS 2021. </h1>
+            <p class="mjesto square_black">mjesto</p>
+            <p class="mjesto__naziv">LAUBA – KUĆA ZA LJUDE I UMJETNOST</p>
+            <p class="mjesto__podaci">Prilaz baruna Filipovića 23a, Zagreb</p>
+            <p class="vrijeme square_black">vrijeme</p>
+            <p class="mjesto__podaci">23. studenoga 2021. godine<br>s početkom u 19 sati</p>
+          </div>
+        </div>
+      </header>
+  
+      <!-- covid obrazac -->
+      <section class="covid__obrazac__wrapper">
+        <div class="left__line"></div>
+        <h2 class="covid__obrazac__text">Covid obrazac</h2>
+        <div class="right__line"></div>
+      </section>
+  
+      <!-- form -->
+      <section class="form">
+        <div class="form__wrapper is-flex is-justify-content-center">
+          <form id="ESA_obrazac">
+            
+            <div class="form__inputs-wrapper">
+  
+              <div class="textarea__wrapper">
+                <input
+                  type="text"
+                  id="ime_prezime"
+                  name="ime_prezime"
+                  class="form__email"
+                  placeholder="Ime i prezime..."
+                />
+                <span class="error_ime__message is-hidden">ovo polje je obavezno</span>
+              </div>
+  
+              
+              <!-- Dolazak -->
+              <div class="dolazak">
+                <div class="error__wrapper">
+                  <div class="error__labels error__labels__dolazak">
+                    <label for="dolazim" class="button__label radio__wrapper">
+                      <span class="radio__input">
+                        <input
+                        type="radio"
+                        id="dolazim"
+                        name="dolazak"
+                        value="dolazim"
+                        class="form__answer"
+                        />
+                        <span class="radio__control">
+                          <img src="./assets/images/3671740_close_icon_white.svg" >
+                        </span>
+                      </span>
+                      Dolazim
+                    </label>
+                    <label for="ne_dolazim" class="button__label radio__wrapper">
+                      <span class="radio__input">
+                        <input
+                        type="radio"
+                        id="ne_dolazim"
+                        name="dolazak"
+                        value="ne_dolazim"
+                        class="form__answer"
+                        />
+                        <span class="radio__control">
+                          <img src="./assets/images/3671740_close_icon_white.svg" >
+                        </span>
+                      </span>
+                      Ne dolazim
+                    </label>
+                  </div>
+                  <span class="error_dolazak__message is-hidden">ovo polje je obavezno</span>
+                </div>
+              </div>
+              
+              <div class="square__light">
+                <p class="text__mid">S obzirom na epidemiološku situaciju i planirani broj uzvanika, prisustvovanje ovom događanju bit će moguće isključivo uz:</p>
+                <p class="text__strong">predočenje EU digitalne COVID potvrde o cijepljenju</p>
+                <p class="text__ili">ili</p>
+                <p class="text__strong">predočenje negativnog rezultata testa na SARS-CoV-2, ne starijeg od 48 sati u odnosu na termin održavanja događanja.</p>
+              </div>
+  
+              <div class="opcije">
+                <p class="text__mid">Za sve uzvanike događanja koji potvrde dolazak a nemaju EU digitalnu COVID potvrdu, Organizator će osigurati testiranje (brzi antigenski test) pa Vas molimo ispunite jednu od dvije navedene opcije:</p>
+              </div>
+  
+              <!-- Potvrda ili cijepljenje -->
+              <div class="potvrda">
+                <div class="error__wrapper">
+                  <div class="error__labels error__labels__potvrda">
+                    <label for="DA_imam" class="button__label radio__wrapper">
+                      <span class="radio__input">
+                        <input
+                        type="radio"
+                        id="DA_imam"
+                        name="covid_potvrda"
+                        value="DA_imam"
+                        class="form__answer"
+                        />
+                        <span class="radio__control">
+                          <img src="./assets/images/3671740_close_icon_white.svg" >
+                        </span>
+                      </span>
+                      DA, imam EU digitalnu COVID potvrdu o cijepljenju
+                    </label>
+                    <label for="NE_nemam" class="button__label radio__wrapper">
+                      <span class="radio__input">
+                        <input
+                        type="radio"
+                        id="NE_nemam"
+                        name="covid_potvrda"
+                        value="NE_nemam"
+                        class="form__answer"
+                        />
+                        <span class="radio__control">
+                          <img src="./assets/images/3671740_close_icon_white.svg" >
+                        </span>
+                      </span>
+                      NE, nemam EU digitalnu COVID potvrdu o cijepljenju i podvrgnut ću se testiranju
+                    </label>
+                  </div>
+                  <span class="error_potvrda__message is-hidden">ovo polje je obavezno</span>
+                </div>
+                
+              </div>
+  
+              <div class="posalji__wrapper">
+                <div><input type="submit" id="submit-form" class="button--custom" value="Pošalji"></div>
+          
+                <!-- Messages and loading -->
+                <div class="is-flex is-justify-content-center">
+                  <div id="loading-indicator" class="is-hidden lds-ripple"><div></div><div></div><div></div><div></div></div>
+                </div>
+                <h6 class="is-hidden has-text-centered" id="error-msg" class="">Morate unijeti sva obavezna polja!</h6>
+                <h6 class="is-hidden has-text-centered" id="response-msg" class="">Vaš unos je spremljen. Hvala na odgovoru!</h6>
+              </div>
+  
+              <div class="info">
+                <p class="rok__odgovora">Molim Vas potvrdite svoj dolazak najkasnije u petak, 12. studenoga 2021. godine. Pozivnica vrijedi za jednu osobu i nije prenosiva.</p>
+                <p class="privatnost">Više informacija o zaštiti privatnosti potražite na<br><a class="link-privatnost" href="http://www.adriamedia.hr/politika-privatnosti/"> www.adriamedia.hr/politika-privatnosti</a></p>
+              </div>
+    
+          </div>
+        </form>
+      </section>
+
+
+    </div>
+
+  <!--  FOOTER -->
+  <!-- <footer class="footer has-text-centered">
+    <div class="container-footer">
+      <h6>Sadržaj nastao u suradnji</h6>
+      <div class="branding">
+        <a href="http://www.adriamedia.hr" target="_blank"
+          ><img src="./assets/images/logo_story_red.svg" alt="Story logo"
+        /></a>
+        <a href="https://jysk.hr/" target="_blank"
+          ><img src="./assets/images/arena_centar_logo_bijeli.jpg" alt="Arena Centar logo" />
+        </a>
+      </div>
+    </div>
+  </footer> -->
+
+  <!-- Main -->
+  <script type="text/javascript" src="lib/main.js?v=3"></script>
+
+  </body>
+</html>
