@@ -36,6 +36,10 @@ form {
 .covid__obrazac__wrapper {
     align-items: center;
     display: flex;
+
+    @include for-phone {
+        padding: 0 15px;
+    }
 }
 
 .covid__obrazac__text {
@@ -45,6 +49,10 @@ form {
     letter-spacing: 1.76px;
     padding: 0 21.5px;
     text-align: center;
+
+    @include for-phone {
+        padding: 0 8.5px;
+    }
 }
 
 .left__line, .right__line {
@@ -82,7 +90,8 @@ form {
     text-align: center;
 
     @include for-phone {
-        padding: 25px;
+        padding: 15px;
+        margin: 0 15px;
     }
 
     @include for-tablet {

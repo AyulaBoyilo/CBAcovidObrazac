@@ -1,13 +1,21 @@
 @use '../utilities/' as *;
 @use '../base/' as *;
 
-.logo__elle {
-    @include for-phone {
-        padding: 0 5px;
+
+.header__image__wrapper {
+    background-color: $roza;
+    height: 430px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    img {
+        object-fit: cover;
+        padding: 0 12px;
     }
 
-    @include for-tablet {
-        padding: 0;
+    @include for-phone {
+        height: 269px;
     }
 }
 
@@ -40,29 +48,54 @@
     }
 }
 
-.pozivnica__sadrzaj {
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 1.92px;
-    
+.pozivnica__naslov {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.67;
+    letter-spacing: 2.16px;
+    text-align: center;
+
     @include for-phone {
-        font-size: 20px;
-        margin-top: 50px;
-        padding: 0 20px;
+        font-size: 23px;
+        padding: 0 15px;
     }
 
     @include for-tablet {
         font-size: 24px;
-        margin-top: 70px;
+    }
+}
+
+.pozivnica__sadrzaj {
+    font-weight: 300;
+    line-height: 1.88;
+    letter-spacing: 1.28px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    
+    @include for-phone {
+        font-size: 16px;
+        margin-top: 25px;
+        padding: 0 20px;
+    }
+
+    @include for-tablet {
+        font-size: 16px;
+        margin-top: 22px;
         padding: 0;
     }
+}
+
+.pozivnica__bold {
+    font-weight: bold;
 }
 
 .square_black {
     background-color: black;
     color: white;
     display: inline-block;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 300;
     letter-spacing: 1.92px;
     line-height: 1;

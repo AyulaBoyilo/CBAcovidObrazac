@@ -2,17 +2,21 @@
 @use '../base/' as *;
 
 .rok__odgovora {
+  color: black;
   font-size: 15px;
   font-weight: 400;
   margin: 70px 32px;
+  padding: 0 40px;
   text-align: center;
 
   @include for-phone {
     margin: 50px 32px 40px;
+    padding: 0;
   }
 }
 
 .privatnost {
+  color: black;
   font-size: 12px;
   text-align: center;
 
@@ -25,7 +29,7 @@
   }
 
   @include for-desktop {
-    margin-bottom: 250px;
+    margin-bottom: 110px;
   }
 }
 

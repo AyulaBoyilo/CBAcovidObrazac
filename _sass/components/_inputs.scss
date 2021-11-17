@@ -6,8 +6,9 @@
     &__wrapper {
         color: black;
         display: grid;
+        font-family: $family-primary;
         font-size: 25px;
-        font-weight: 500;
+        font-weight: 400;
         grid-template-columns: min-content auto;
         grid-gap: 35px;
         padding-left: 10px;
@@ -18,7 +19,7 @@
 
         @include for-phone {
             align-items: center;
-            font-size: 18px;
+            font-size: 17px;
             line-height: 1.2;
             margin-bottom: 20px;
         }
@@ -80,7 +81,7 @@ textarea, .form__email {
     width: 450px;
 
     @include for-phone {
-        width: calc(100% - 60px);
+        width: calc(100% - 30px);
     }
 
     &:focus, &:focus-visible, &:active {
@@ -94,10 +95,6 @@ textarea, .form__email {
     flex-direction: column;
     justify-content: center;
     margin: 72px 0 63px;
-
-    @include for-phone {
-        padding: 0 30px;
-    }
 }
 
 textarea {
